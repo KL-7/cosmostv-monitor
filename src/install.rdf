@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="cosmostv-monitor@moz.dev"
+                   em:name="CosmostTV Account Monitor"
+                   em:version="0.1"
+                   em:creator="KL-7"
+                   em:description="Shows CosmostTV Internet account info in the firefox statusbar."
+                   em:optionsURL="chrome://cosmostv-monitor/content/prefs.xul">
+    <em:targetApplication RDF:resource="rdf:#$WzV1v"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$WzV1v"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.0"
+                   em:maxVersion="3.6.*" />
+</RDF:RDF>

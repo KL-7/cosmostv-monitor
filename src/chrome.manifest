@@ -1,0 +1,2 @@
+content   cosmostv-monitor                       chrome/content/
+overlay   chrome://browser/content/browser.xul   chrome://cosmostv-monitor/content/panel.xul

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<prefwindow id="cosmostv-monitor-preferences"
+            xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            title="CosmosTV Monitor Preferences">
+
+  <script src="chrome://cosmostv-monitor/content/prefs.js"
+          type="application/x-javascript" />
+
+  <prefpane id="cosmostv-pref-pane1"
+            onpaneload="gCosmostvPrefs.onLoad()">
+
+    <preferences>
+      <preference id="cosmostv-contract-pref" name="extensions.cosmostv-monitor.contract"
+                  type="string" editable="false" />
+      <preference id="cosmostv-id-pref" name="extensions.cosmostv-monitor.id"
+                  type="string" editable="false" />
+      <preference id="cosmostv-monitor-update-interval-pref"
+                  name="extensions.cosmostv-monitor.update-interval" type="int"/>
+    </preferences>
+
+    <hbox align="center">
+      <label control="cosmostv-contract" value="Contract:" />
+      <textbox id="cosmostv-contract" preference="cosmostv-contract-pref"
+               readonly="true" flex="1" />
+    </hbox>
+
+    <button label="Update Account Info" oncommand="gCosmostvPrefs.updateAccountInfo()"/>
+
+    <hbox align="center">
+      <label control="cosmostv-monitor-update-interval" value="Update interval:" />
+      <textbox type="number" id="cosmostv-monitor-update-interval"
+               preference="cosmostv-monitor-update-interval-pref" />
+    </hbox>
+
+  </prefpane>
+
+</prefwindow>

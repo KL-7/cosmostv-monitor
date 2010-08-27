@@ -1,0 +1,2 @@
+A Firefox extension for easy monitoring of your CosmosTV (cosmostv.by) internet
+account status.
